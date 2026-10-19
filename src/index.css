@@ -1,7 +1,20 @@
 body {
-  background-color: green;
+  background-color: black;
 }
 
 .hero-section {
-  background-color: red;
+  /* Links your image */
+  background-image: url('assets/LandscapeExample.jpeg');
+
+  /* Scales the image to scale and completely fill the container */
+  background-size: cover;
+
+  /* Centers the image horizontally and vertically */
+  background-position: center;
+
+  /* Prevents the image from repeating if the container is larger than the image */
+  background-repeat: no-repeat;
+
+  /* Sets the height of the hero section to fill the viewport */
+  height: 100vh !important;
 }

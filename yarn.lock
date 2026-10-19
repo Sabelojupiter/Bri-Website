@@ -1041,6 +1041,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/carousel@npm:^9.7.2":
+  version: 9.7.2
+  resolution: "@mantine/carousel@npm:9.7.2"
+  peerDependencies:
+    "@mantine/core": 9.7.2
+    "@mantine/hooks": 9.7.2
+    embla-carousel: ">=8.0.0"
+    embla-carousel-react: ">=8.0.0"
+    react: ^19.2.0
+    react-dom: ^19.2.0
+  checksum: 10c0/562ff5597e57630a129fe2f41c352c26099a5f1340d24c1003a1ae153d941d565e2be670e5742885afd279d17e557eecf69bd8c738fcd593e01316cce38314ff
+  languageName: node
+  linkType: hard
+
 "@mantine/core@npm:9.7.2":
   version: 9.7.2
   resolution: "@mantine/core@npm:9.7.2"
@@ -3282,6 +3296,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-react@npm:^8.5.2":
+  version: 8.6.0
+  resolution: "embla-carousel-react@npm:8.6.0"
+  dependencies:
+    embla-carousel: "npm:8.6.0"
+    embla-carousel-reactive-utils: "npm:8.6.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c0/461b0c427a6fca62e730c7b39d08e9c55b01a2138c173d5b9ebf77ec92092a900b45ac384731c77382b48d5d65946994d3abba6e9899a66d6e16f8ddf191ed1c
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.6.0":
+  version: 8.6.0
+  resolution: "embla-carousel-reactive-utils@npm:8.6.0"
+  peerDependencies:
+    embla-carousel: 8.6.0
+  checksum: 10c0/33d07e6df4d8dec9b4fc95858838ea2d5e5df078039c05b2a342c05ba4979d8d18564a1c607da445fed744daf969a0b5a90124ce487a854e86ced6f0458b51e9
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.6.0, embla-carousel@npm:^8.5.2":
+  version: 8.6.0
+  resolution: "embla-carousel@npm:8.6.0"
+  checksum: 10c0/f4c598e7be28b70340d31ffd2bebb2472db370b0c81d9b089bf9555cf618695f35dc4a0694565c994c9ab972731123063f945aa09ff485df0df761d79c6a08ef
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^10.3.0":
   version: 10.6.0
   resolution: "emoji-regex@npm:10.6.0"
@@ -4492,6 +4534,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mantine-vite-template@workspace:."
   dependencies:
+    "@mantine/carousel": "npm:^9.7.2"
     "@mantine/core": "npm:9.7.2"
     "@mantine/hooks": "npm:9.7.2"
     "@storybook/addon-themes": "npm:^10.0.0"
@@ -4505,6 +4548,8 @@ __metadata:
     "@types/react": "npm:^19.2.2"
     "@types/react-dom": "npm:^19.2.1"
     "@vitejs/plugin-react": "npm:^6.0.0"
+    embla-carousel: "npm:^8.5.2"
+    embla-carousel-react: "npm:^8.5.2"
     identity-obj-proxy: "npm:^3.0.0"
     jsdom: "npm:^30.0.0"
     oxc-config-mantine: "npm:^1.0.0"
