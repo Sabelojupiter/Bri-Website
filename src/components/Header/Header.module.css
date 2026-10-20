@@ -1,0 +1,36 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: rgb(255 246 236 / 85%);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: Fraunces, serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo em {
+  color: var(--magenta);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover,
+.link[aria-current='page'] {
+  border-color: var(--tangerine);
+}

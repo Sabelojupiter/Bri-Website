@@ -1,3 +1,8 @@
 import { createTheme } from '@mantine/core';
 
-export const theme = createTheme({/** Put your mantine theme override here */});
+export const theme = createTheme({
+  fontFamily: 'DM Sans, sans-serif',
+  headings: { fontFamily: 'Fraunces, serif', fontWeight: '600' },
+  primaryColor: 'dark',
+  defaultRadius: 'xl',
+});

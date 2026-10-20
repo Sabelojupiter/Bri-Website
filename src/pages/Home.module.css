@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  min-height: 88vh;
+  margin: 0 16px;
+  border-radius: 32px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.glow {
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(120deg, var(--tangerine), var(--magenta), var(--violet), var(--sun));
+  background-size: 300% 300%;
+  mix-blend-mode: soft-light;
+  opacity: 0.85;
+  animation: drift 14s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+.heroText {
+  position: relative;
+  padding: clamp(24px, 5vw, 48px);
+  color: white;
+  text-shadow: 0 2px 24px rgb(0 0 0 / 35%);
+}
+
+.title {
+  font-family: Fraunces, serif;
+  font-size: clamp(48px, 10vw, 128px);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.title em {
+  color: var(--sun);
+}
+
+.tagline {
+  font-size: 20px;
+  margin: 16px 0 24px;
+  max-width: 420px;
+}
+
+.featured {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-family: Fraunces, serif;
+  font-size: 40px;
+  margin: 0 0 32px;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow { animation: none; }
+}
